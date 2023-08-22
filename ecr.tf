@@ -1,5 +1,5 @@
 module "ecr-fe-app" {
-  source = "terraform-aws-modules/ecr/aws"
+  source          = "terraform-aws-modules/ecr/aws"
   repository_name = "ecr-fe"
   repository_lifecycle_policy = jsonencode({
     rules = [
@@ -22,7 +22,7 @@ module "ecr-fe-app" {
 }
 
 module "ecr-be-app" {
-  source = "terraform-aws-modules/ecr/aws"
+  source          = "terraform-aws-modules/ecr/aws"
   repository_name = "ecr-be"
   repository_lifecycle_policy = jsonencode({
     rules = [
