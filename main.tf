@@ -33,8 +33,8 @@ data "aws_caller_identity" "current" {}
 # Provider
 provider "aws" {
   region     = var.region
-  access_key = "AKIASZHPLDFMIQUU67VW"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 provider "kubernetes" {
